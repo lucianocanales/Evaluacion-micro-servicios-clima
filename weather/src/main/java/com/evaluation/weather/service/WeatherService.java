@@ -52,7 +52,7 @@ public class WeatherService {
      * @param name
      * @return
      */
-    private LocationModel getlocation(String name){
+    public LocationModel getlocation(String name){
         String uri = locationUrl + name;
         LocationModel externalLocation = restTemplate.getForObject(uri, LocationModel.class);
         return externalLocation;
